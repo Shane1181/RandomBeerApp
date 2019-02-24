@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://http.thymleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>Beer</title>
+</head>
+<div class="jumbotron text-center">
+<body>
+
+    <h1>Random Beer!</h1>
+    <p th:text="'Name: ' + ${name}"></p>
+    <p th:text="'Description: ' + ${description}"></p>
+    <p th:text="'abv: ' + ${abv} +'%'"></p>
+    <p th:text="'Location: ' + ${location}"></p>
+
+    <button class="btn"><a href="/beer">Get Another</a> </button>
+
+</body>
+</div>
+</html>
